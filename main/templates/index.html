@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webcam Security</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    
+    <body>
+        
+        <div id="video-frames">
+            <img src="{% url 'webcam_feed' %}">
+            <img src="{% url 'mobilecam_feed' %}">
+          </div>
+    </body>
+</html>
